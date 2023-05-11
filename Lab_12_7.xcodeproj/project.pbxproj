@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CEA6FCBD2A0D7D210009D2D6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEA6FCBC2A0D7D210009D2D6 /* main.cpp */; };
+		CEA6FCBD2A0D7D210009D2D6 /* Lab_12_7.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEA6FCBC2A0D7D210009D2D6 /* Lab_12_7.cpp */; };
+		CEA6FCCB2A0D8C800009D2D6 /* UnitTest_12_7.mm in Sources */ = {isa = PBXBuildFile; fileRef = CEA6FCCA2A0D8C800009D2D6 /* UnitTest_12_7.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,11 +25,21 @@
 
 /* Begin PBXFileReference section */
 		CEA6FCB92A0D7D210009D2D6 /* Lab_12_7 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab_12_7; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEA6FCBC2A0D7D210009D2D6 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		CEA6FCBC2A0D7D210009D2D6 /* Lab_12_7.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Lab_12_7.cpp; sourceTree = "<group>"; };
+		CEA6FCC32A0D8C320009D2D6 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		CEA6FCC82A0D8C7F0009D2D6 /* UnitTest_12_7.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTest_12_7.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA6FCCA2A0D8C800009D2D6 /* UnitTest_12_7.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = UnitTest_12_7.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CEA6FCB62A0D7D210009D2D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA6FCC52A0D8C7F0009D2D6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				CEA6FCBB2A0D7D210009D2D6 /* Lab_12_7 */,
+				CEA6FCC92A0D8C800009D2D6 /* UnitTest_12_7 */,
 				CEA6FCBA2A0D7D210009D2D6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				CEA6FCB92A0D7D210009D2D6 /* Lab_12_7 */,
+				CEA6FCC82A0D8C7F0009D2D6 /* UnitTest_12_7.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,9 +70,18 @@
 		CEA6FCBB2A0D7D210009D2D6 /* Lab_12_7 */ = {
 			isa = PBXGroup;
 			children = (
-				CEA6FCBC2A0D7D210009D2D6 /* main.cpp */,
+				CEA6FCBC2A0D7D210009D2D6 /* Lab_12_7.cpp */,
+				CEA6FCC32A0D8C320009D2D6 /* Header.h */,
 			);
 			path = Lab_12_7;
+			sourceTree = "<group>";
+		};
+		CEA6FCC92A0D8C800009D2D6 /* UnitTest_12_7 */ = {
+			isa = PBXGroup;
+			children = (
+				CEA6FCCA2A0D8C800009D2D6 /* UnitTest_12_7.mm */,
+			);
+			path = UnitTest_12_7;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +104,23 @@
 			productReference = CEA6FCB92A0D7D210009D2D6 /* Lab_12_7 */;
 			productType = "com.apple.product-type.tool";
 		};
+		CEA6FCC72A0D8C7F0009D2D6 /* UnitTest_12_7 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEA6FCCC2A0D8C800009D2D6 /* Build configuration list for PBXNativeTarget "UnitTest_12_7" */;
+			buildPhases = (
+				CEA6FCC42A0D8C7F0009D2D6 /* Sources */,
+				CEA6FCC52A0D8C7F0009D2D6 /* Frameworks */,
+				CEA6FCC62A0D8C7F0009D2D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnitTest_12_7;
+			productName = UnitTest_12_7;
+			productReference = CEA6FCC82A0D8C7F0009D2D6 /* UnitTest_12_7.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +131,9 @@
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					CEA6FCB82A0D7D210009D2D6 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					CEA6FCC72A0D8C7F0009D2D6 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
@@ -110,16 +152,35 @@
 			projectRoot = "";
 			targets = (
 				CEA6FCB82A0D7D210009D2D6 /* Lab_12_7 */,
+				CEA6FCC72A0D8C7F0009D2D6 /* UnitTest_12_7 */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEA6FCC62A0D8C7F0009D2D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CEA6FCB52A0D7D210009D2D6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEA6FCBD2A0D7D210009D2D6 /* main.cpp in Sources */,
+				CEA6FCBD2A0D7D210009D2D6 /* Lab_12_7.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA6FCC42A0D8C7F0009D2D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA6FCCB2A0D8C800009D2D6 /* UnitTest_12_7.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +318,34 @@
 			};
 			name = Release;
 		};
+		CEA6FCCD2A0D8C800009D2D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3MHJJLP6XJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Lab.UnitTest-12-7";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+			};
+			name = Debug;
+		};
+		CEA6FCCE2A0D8C800009D2D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3MHJJLP6XJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Lab.UnitTest-12-7";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -274,6 +363,15 @@
 			buildConfigurations = (
 				CEA6FCC12A0D7D210009D2D6 /* Debug */,
 				CEA6FCC22A0D7D210009D2D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEA6FCCC2A0D8C800009D2D6 /* Build configuration list for PBXNativeTarget "UnitTest_12_7" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEA6FCCD2A0D8C800009D2D6 /* Debug */,
+				CEA6FCCE2A0D8C800009D2D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
